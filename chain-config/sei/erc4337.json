@@ -1,0 +1,46 @@
+{
+  "configurations": [
+    {
+      "entrypoint_address": "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[], address)",
+      "scw_function_name": "execute_ncC",
+      "scw_function_abi": "function execute_ncC(address,uint256,bytes)"
+    },
+    {
+      "entrypoint_address": "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[], address)",
+      "scw_function_name": "executeBatch_y6U",
+      "scw_function_abi": "function executeBatch_y6U(address[],uint256[],bytes[])"
+    },
+    {
+      "entrypoint_address": "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[], address)",
+      "scw_function_name": "execute",
+      "scw_function_abi": "function execute(address,uint256,bytes)"
+    },
+    {
+      "entrypoint_address": "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[], address)",
+      "scw_function_name": "executeBatch",
+      "scw_function_abi": "function executeBatch(address[],uint256[],bytes[])"
+    },
+    {
+      "entrypoint_address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,bytes32,uint256,bytes32,bytes,bytes)[], address arg1)",
+      "scw_function_name": "execute",
+      "scw_function_abi": "function execute(address,uint256,bytes)"
+    },
+    {
+      "entrypoint_address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,bytes32,uint256,bytes32,bytes,bytes)[], address arg1)",
+      "scw_function_name": "executeBatch",
+      "scw_function_abi": "function executeBatch(address[],uint256[],bytes[])"
+    }
+  ]
+}

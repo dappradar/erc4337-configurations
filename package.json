@@ -1,0 +1,18 @@
+{
+  "name": "erc4337-configuration",
+  "version": "1.0.0",
+  "description": "Tool for testing ERC4337 configurations",
+  "main": "src/cli/decode.ts",
+  "scripts": {
+    "decode": "ts-node src/cli/decode.ts"
+  },
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.1"
+  }
+} 

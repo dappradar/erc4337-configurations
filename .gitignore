@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+
+# OS specific
+.DS_Store 
