@@ -1,0 +1,14 @@
+{
+    "chainId": "arbitrum",
+    "tests": [
+        {
+            "txHash": "0xc1851b70f914dd3a3940bc48971939aadd09397097fc40196ab65bcccde9c964",
+            "expected": [
+                {
+                    "from": "0x42ea98a1293321593004CA243299bA9F9694C6D4",
+                    "to": "0x21DFb0a12D77f4e0D2cF9008d0C2643d1e36DA41"
+                }
+            ]
+        }
+    ]
+} 

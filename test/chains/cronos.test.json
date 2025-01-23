@@ -1,0 +1,14 @@
+{
+    "chainId": "cronos",
+    "tests": [
+        {
+            "txHash": "0xc88c0ff65bdcdc2a76538da6e4c1a1a80beff6ff5f978b734c7c79251bd760a9",
+            "expected": [
+                {
+                    "from": "0x17Ebb49F8e8E8568C071F33343444A7B4FA5AC32",
+                    "to": "0x54a867f5F9E383b184bD35D524f3272d312E97C3"
+                }
+            ]
+        }
+    ]
+} 

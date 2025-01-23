@@ -1,0 +1,18 @@
+{
+    "chainId": "sei",
+    "tests": [
+        {
+            "txHash": "0xbb7c7cdcea334b7f3b175c1b5239e93eeb1b33634e6d940f9cb1035f58852377",
+            "expected": [
+                {
+                    "from": "0xb3F72022B5ee6917A2acf075D3A7b81019E3279B",
+                    "to": "0x516e70AB91f817f4a7ba8aa02BEc44a6532c4E33"
+                },
+                {
+                    "from": "0x83A8D86b1eF18D044cEdfed6cFf3eaCCc4631C34",
+                    "to": "0x516e70AB91f817f4a7ba8aa02BEc44a6532c4E33"
+                }
+            ]
+        }
+    ]
+} 

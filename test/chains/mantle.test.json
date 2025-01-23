@@ -1,0 +1,14 @@
+{
+    "chainId": "mantle",
+    "tests": [
+        {
+            "txHash": "0xb4fbc87ec842e9f11aaff9327b7eb098304f13dce999edd0e9f0dd3e63d482ea",
+            "expected": [
+                {
+                    "from": "0xf7E6ccFF74Bc7859346Edb23b89ace5574d72aB3",
+                    "to": "0x164E6c3b1a6858352ace33Edd00027E73684d1c8"
+                }
+            ]
+        }
+    ]
+} 

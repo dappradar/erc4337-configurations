@@ -25,8 +25,8 @@ git clone git@github.com:dappradar/erc4337-configurations.git
 npm install
 ```
 
-3. Configure RPC endpoints in `.env` file
-```bash
+3. Add your RPC URLs in the format:
+```
 RPC_CHAINNAME=your_rpc_url
 ```
 
@@ -49,8 +49,32 @@ RPC_CHAINNAME=your_rpc_url
 }
 ```
 
+3. Add a test file in `test/chains/<chain>.test.json`:
+
+```json
+{
+  "chainId": "your_chain_name",
+  "tests": [
+    {
+      "txHash": "0x...",
+      "expected": [
+        {
+          "from": "0x...",
+          "to": "0x..."
+        }, 
+        {
+          "from": "0x...",
+          "to": "0x..."
+        }
+      ]
+    }
+  ]
+}
+```
+
 ## Testing Your Configuration
 
+### Manual Testing
 Test your configuration by decoding an actual ERC4337 transaction from your chain:
 
 ```bash
@@ -62,7 +86,17 @@ Example:
 npm run decode ethereum 0x123...abc
 ```
 
-This will attempt to decode the transaction using your provided configuration and output the result.
+After adding test case for your chain - run it:
+```bash
+npm run test <chain>
+```
+
+Example:
+```bash
+npm run test b3
+```
+
+Each test case verifies that the transaction can be decoded correctly and matches the expected `from` and `to` addresses.
 
 ## Configuration Format
 
@@ -77,11 +111,14 @@ Each configuration should include:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/chain-name`)
-3. Add your configuration
-4. Test your configuration with actual transactions
-5. Commit your changes (`git commit -m 'Add CHAIN_NAME configuration'`)
-6. Push to the branch (`git push origin feature/chain-name`)
-7. Open a Pull Request
+3. Add your configuration in `chain-config/<chain-name>/erc4337.json`
+4. Add test cases in `test/chains/<chain-name>.test.json`
+5. Test your configuration:
+   - Run manual tests with `npm run decode`
+   - Run automated tests with `npm run test <chain-name>`
+6. Commit your changes (`git commit -m 'Add CHAIN_NAME configuration'`)
+7. Push to the branch (`git push origin feature/chain-name`)
+8. Open a Pull Request
 
 ## Contact
 

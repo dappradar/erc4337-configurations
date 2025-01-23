@@ -1,0 +1,14 @@
+{
+    "chainId": "b3",
+    "tests": [
+        {
+            "txHash": "0xede722fb64b6752baada7ac5a85c6e5b6e0da067a041d48e88f33d86c94fe20a",
+            "expected": [
+                {"from":"0x10A278d965B8FeeBc4e8D573A25a318246ad5401","to":"0x46b25795C1Dba9eC2B39f6C5B1be105C682E6fC1"},
+                {"from":"0x4e2107f3D6748dfA935273fF0770319226E960c0","to":"0x46b25795C1Dba9eC2B39f6C5B1be105C682E6fC1"},
+                {"from":"0x41FeC0C04134C5D60572082A976cC8ae349BaFb0","to":"0x46b25795C1Dba9eC2B39f6C5B1be105C682E6fC1"},
+                {"from":"0x6583Ef610FfCaE3c120731501A2497586763400b","to":"0x46b25795C1Dba9eC2B39f6C5B1be105C682E6fC1"}
+            ]
+        }
+    ]
+} 

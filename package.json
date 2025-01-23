@@ -4,7 +4,8 @@
   "description": "Tool for testing ERC4337 configurations",
   "main": "src/cli/decode.ts",
   "scripts": {
-    "decode": "ts-node src/cli/decode.ts"
+    "decode": "ts-node src/cli/decode.ts",
+    "test": "ts-node test/test.ts"
   },
   "dependencies": {
     "ethers": "^6.9.0",

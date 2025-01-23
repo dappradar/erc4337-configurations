@@ -1,0 +1,14 @@
+{
+    "chainId": "linea",
+    "tests": [
+        {
+            "txHash": "0xd942e9eff269a5740bc42e59f7939cbcdb95b4160d48498710088417da144fb3",
+            "expected": [
+                {
+                    "from": "0x9bE1B9b87D189dF444f4f8a66f1A50398bcEba37",
+                    "to": "0x0000000000000000000000000000000000000000"
+                }
+            ]
+        }
+    ]
+} 

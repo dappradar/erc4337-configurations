@@ -1,0 +1,14 @@
+{
+    "chainId": "bsc",
+    "tests": [
+        {
+            "txHash": "0xab880405cbb4252ef07d4a71b18829946e52d26ce3c908233b187b2351019151",
+            "expected": [
+                {
+                    "from": "0x52044C2eFC3307826301d267fd03d350E09347dD",
+                    "to": "0x385f490c56932563bAD469C59dC1B79EC84fBDEc"
+                }
+            ]
+        }
+    ]
+} 

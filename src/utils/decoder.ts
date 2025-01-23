@@ -39,9 +39,21 @@ export async function decodeUserOperation(
                         conf.scw_function_name,
                         callData
                     );
-                    const to = scwCallDataDecoded[0];
+                    
+                    let to;
+                    if (Array.isArray(scwCallDataDecoded[0])) {
+                        to = scwCallDataDecoded[0][0];
+                    } else {
+                        to = scwCallDataDecoded[0];
+                    }
+
+                    const from = userOp[keyToIndexMap['sender']];
+                    if (!ethers.isAddress(from) || !ethers.isAddress(to)) {
+                        continue;
+                    }
+
                     result.push({
-                        'from': userOp[keyToIndexMap['sender']],
+                        'from': from,
                         'to': to
                     });
                     anySuccessfulDecode = true;
