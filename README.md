@@ -51,6 +51,10 @@ RPC_CHAINNAME=your_rpc_url
 
 3. Add a test file in `test/chains/<chain>.test.json`:
 
+```
+"from" -> User address
+"to" -> Smart contract address (with which user interacts)
+```
 ```json
 {
   "chainId": "your_chain_name",
