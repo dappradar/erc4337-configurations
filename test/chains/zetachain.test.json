@@ -1,0 +1,14 @@
+{
+    "chainId": "zetachain",
+    "tests": [
+        {
+            "txHash": "0xf8da875dbeb4303aca771856d31d48637d4ddb2c6cead6b7eda5e013465ff373",
+            "expected": [
+                {
+                    "from": "0x2e7f8Ead4d69bEd96aF82CF262567a94bB89b181",
+                    "to": "0xe413dEc688ea59E7c82503feeb53747785CEab5b"
+                }
+            ]
+        }
+    ]
+} 
