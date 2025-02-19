@@ -12,7 +12,13 @@ export async function decodeUserOperation(
         try {
             const entrypointFuncIface = new ethers.Interface([conf.entrypoint_function_abi]);
             const scwFuncIface = new ethers.Interface([conf.scw_function_abi]);
+            const scwFunction = scwFuncIface.getFunction(conf.scw_function_name);
+            if (!scwFunction || !scwFunction.inputs) {
+                continue;
+            }
 
+            const scwFunctionParams = scwFunction.inputs;
+            const isAddressFieldDefined = scwFunctionParams.length > 0 && scwFunctionParams[0].type.includes('address');
             const keyToIndexMap = {
                 'sender': 0,
                 'nonce': 1,
@@ -41,10 +47,14 @@ export async function decodeUserOperation(
                     );
                     
                     let to;
-                    if (Array.isArray(scwCallDataDecoded[0])) {
-                        to = scwCallDataDecoded[0][0];
-                    } else {
-                        to = scwCallDataDecoded[0];
+                    if (isAddressFieldDefined) {
+                        if (Array.isArray(scwCallDataDecoded[0])) {
+                            to = scwCallDataDecoded[0][0];
+                        } else {
+                            to = scwCallDataDecoded[0];
+                        }
+                    } else if (scwCallDataDecoded[1] && scwCallDataDecoded[1].startsWith('0x')) {
+                        to = scwCallDataDecoded[1].slice(0, 42);
                     }
 
                     const from = userOp[keyToIndexMap['sender']];
