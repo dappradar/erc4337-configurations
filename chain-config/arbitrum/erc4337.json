@@ -27,6 +27,15 @@
       "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,bytes32,uint256,bytes32,bytes,bytes)[], address)",
       "scw_function_name": "executeBatch",
       "scw_function_abi": "function executeBatch(address[],uint256[],bytes[])"
+    },
+    {
+      "entrypoint_address": "0x701c09edf9369954d7687f7d1c03002dc79371cb",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,bytes)[])",
+      "scw_function_name": "transfer",
+      "scw_function_abi": "function transfer(address,uint256)",
+      "op_calldata_index": 2,
+      "op_calldata_skip_bytes": 20
     }
   ]
 }

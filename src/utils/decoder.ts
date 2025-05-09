@@ -40,12 +40,12 @@ export async function decodeUserOperation(
 
             for (const userOp of decoded[0]) {
                 try {
-                    const callData = userOp[keyToIndexMap['callData']];
+                    const callData = ethers.dataSlice(userOp[conf.op_calldata_index || keyToIndexMap['callData']], conf.op_calldata_skip_bytes || 0);
                     const scwCallDataDecoded = scwFuncIface.decodeFunctionData(
                         conf.scw_function_name,
                         callData
                     );
-                    
+
                     let to;
                     if (isAddressFieldDefined) {
                         if (Array.isArray(scwCallDataDecoded[0])) {
