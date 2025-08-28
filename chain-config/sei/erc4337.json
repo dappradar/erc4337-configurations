@@ -41,6 +41,13 @@
       "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,bytes32,uint256,bytes32,bytes,bytes)[], address)",
       "scw_function_name": "executeBatch",
       "scw_function_abi": "function executeBatch(address[],uint256[],bytes[])"
+    },
+    {
+      "entrypoint_address": "0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789",
+      "entrypoint_function_name": "handleOps",
+      "entrypoint_function_abi": "function handleOps((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes)[], address)",
+      "scw_function_name": "mint",
+      "scw_function_abi": "function mint(address,address,uint256)"
     }
   ]
 }
