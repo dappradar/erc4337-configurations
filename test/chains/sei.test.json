@@ -1,27 +1,23 @@
 {
-    "chainId": "sei",
-    "tests": [
-        {
-            "txHash": "0xbb7c7cdcea334b7f3b175c1b5239e93eeb1b33634e6d940f9cb1035f58852377",
-            "expected": [
-                {
-                    "from": "0xb3F72022B5ee6917A2acf075D3A7b81019E3279B",
-                    "to": "0x516e70AB91f817f4a7ba8aa02BEc44a6532c4E33"
-                },
-                {
-                    "from": "0x83A8D86b1eF18D044cEdfed6cFf3eaCCc4631C34",
-                    "to": "0x516e70AB91f817f4a7ba8aa02BEc44a6532c4E33"
-                }
-            ]
-        },
-        {
-      "txHash": "0xed6a401f36449ec7985774c639a561e699a5d23d308876b44c7ec41a7d881829",
+  "chainId": "sei",
+  "tests": [
+    {
+      "txHash": "0x80a7318a3cb425a8a2c4461e197e45c8b79d0f50ec81604e12c2447763d9bd61",
       "expected": [
         {
-          "from": "0x58803fF612cD0CCc14bA33753d73E5A7F830A037",
-          "to": "0x56196ADfD7EBc7a54e838EE893Be0772BfaFCBac"
+          "from": "0x55bF96c0793BE0978c98e1b67715684A526cC71f",
+          "to": "0x884fdedbac2df3c2146810caf02f95baedabd0fa"
+        }
+      ]
+    },
+    {
+      "txHash": "0x80a7318a3cb425a8a2c4461e197e45c8b79d0f50ec81604e12c2447763d9bd61",
+      "expected": [
+        {
+          "from": "0x55bF96c0793BE0978c98e1b67715684A526cC71f",
+          "to": "0x884fdedbac2df3c2146810caf02f95baedabd0fa"
         }
       ]
     }
-    ]
-} 
+  ]
+}
