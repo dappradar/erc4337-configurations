@@ -49,7 +49,13 @@ export async function decodeUserOperation(
                     let to;
                     if (isAddressFieldDefined) {
                         if (Array.isArray(scwCallDataDecoded[0])) {
-                            to = scwCallDataDecoded[0][0];
+                            const firstElement = scwCallDataDecoded[0][0];
+                            
+                            if (typeof firstElement === 'string' && firstElement.startsWith('0x')) {
+                                to = firstElement;
+                            } else if (typeof firstElement === 'object' && firstElement !== null) {
+                                to = firstElement[0] || firstElement.target || firstElement.dest || firstElement.to;
+                            }
                         } else {
                             to = scwCallDataDecoded[0];
                         }
